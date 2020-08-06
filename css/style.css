@@ -1,0 +1,207 @@
+/* Sets root font size */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: lightgrey;
+}
+
+
+/* Page container and wrap to keep the footer placed below */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+
+/* header CSS */
+
+header {
+
+    height: auto;
+    background-color: #222222;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    width: 280px;
+    background-color: #cc6419;
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+}
+
+header a, header a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+    /* site nav */
+.navbar {
+    padding-right: 30px;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    color: whitesmoke;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 55%, #cc6419 55%)
+}
+
+    /* current page nav-link */
+.active {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #f7822f 45%)
+}
+
+    /* Nav Link Hover states */
+.nav-link:hover {
+    color: whitesmoke;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #f7822f 45%)
+}
+/* End header */
+
+/* Main section CSS */
+
+    /* Card */
+.card {
+    margin: 40px auto;
+}
+    /* Card header */
+.about-title {
+    padding: 20px 0 0.25rem;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* about page css */
+.img-about {
+    max-height: 300px;
+    object-fit: contain;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.img-squirrel {
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    padding: 20px;
+}
+
+.big-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.fa-github {
+    color: #cc6419;
+}
+
+.fa-github:hover {
+    color: #f7822f;
+    text-decoration: none;
+}
+/* End section */
+
+
+/* New portfolio CSS */
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 25px;
+}
+
+.portfolio-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px 1px #a1a2a3;
+}
+
+.portfolio-item img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.fa-star {
+    color: rgb(233, 209, 75);
+}
+/* end */
+
+
+/* Footer CSS */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #222222;
+    border-top: 4px solid #cc6419;
+}
+
+footer p {
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+
+/* Media queries */
+
+/* Fix for responsive nav bar */
+@media only screen and (max-width: 680px) {
+    .nav-link {
+        padding: .5rem;
+        font-size: 1.2rem;
+    }
+    .navbar {
+        padding-right: 15px;
+    }
+}
+
+
+    /* Responsive header */
+@media only screen and (max-width: 600px) {
+    header .logo {
+        width: 100%;
+        margin-left: 0;
+    }
+    .logo-box {
+        padding: 0;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .nav-link {
+        padding: .5rem;
+        font-size: 1.2rem;
+    }
+
+    /* Responsive card content */
+    .img-about {
+        width: 100%;
+    }
+}
+
+/* Tightens up portfolio tile grouping on larger screens */
+@media only screen and (min-width: 1000px) {
+    .portfolio-group {
+        margin: 5%;
+    }
+}
