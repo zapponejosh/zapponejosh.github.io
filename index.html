@@ -1,53 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-us">
-​
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<html lang="en">
+  <head>
+    <title>Josh Zappone - About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e7b35dc62.js" crossorigin="anonymous"></script>
 
-<body>
-​
-  <!-- Site Header -->
-  <header>
-    <!-- h1: The most important headline -->
-    <h1>Student Bio</h1>
-  </header>
-​
-  <div>
-​
-    <!-- Section 1: Bio -->
-    <section>
-      <!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
-      <h2>Josh</h2>
-​
-      <!-- Image with link -->
-      <img src="https://placehold.it/200x200" alt="HobertBush">
-​
-      <!-- Paragraph with embedded link -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet massa sed nulla scelerisque, non varius augue dapibus. Etiam suscipit cursus rutrum. Mauris fringilla, elit non blandit porta, felis diam euismod nisi, laoreet hendrerit nisi sapien non eros. Etiam arcu mi, rhoncus eget faucibus sagittis, vulputate nec diam. Aliquam eleifend faucibus ipsum in auctor. Proin in mollis ante. Duis a ultrices dolor. Aenean non ornare purus. Quisque suscipit felis ut tellus faucibus, sed mollis eros gravida. 
-        <a href="http://www.lipsum.com/">www.lipsum.com</a>
-      </p>
-    </section>
-​
-    <!-- Section 2: Contact Info -->
-    <section>
-​
-      <!-- h2: Tier-2 Headline -->
-      <h2>Contact Info</h2>
-​
-      <!-- Unordered list -->
-      <ul>
-        <li><strong>Email:</strong> <a href="#">hobertbush@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">HobertBush</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
-​
-    </section>
-  </div>
-​
-</body>
-​</html>
+  </head>
+  <body>
+    <div id="page-container">
+      <header class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 logo-box">
+            <div class="logo">
+              <h1>Josh Zappone</h1>
+            </div>
+          </div>
+          <!-- Navbar -->
+          <div class="navbar col-md-8 col-sm-6">
+            <nav class="nav">
+              <a class="nav-link active" href="index.html">About</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+          </div>  
+        </div>
+      </header>
+
+      <main class="container" id="content-wrap">
+          <section class="card text-left col-md-10">
+            <div class="card-body">
+              <h4 class="card-title about-title">About Me</h4>
+              <hr>
+              <img class="img-about float-left" src="Assets/Images/about-img.jpg" alt="">
+
+              <!-- About me body -->
+              <p><span class="big-text">Welcome! </span>My name is Josh and I am a developer. My path to programming was circuitous but ultimately I have found my home in the code editor. </p>
+              <p>Life has moved rapidly for me over the last several years. I graduated with a dual degree in Pastoral Ministry and Biblical Studies from Northwest University and worked at a church until the beginning of 2020. During that time I also got married, got a dog <i class="fas fa-dog"></i>, and started renting the house I grew up in. I currently work at a tech company in Bellevue as a web producer.</p>
+              <p>When I am not staring at a monitor for work or honing my development skills I can be found walking my dog, watching one of several TV shows with my wife (Brooklyn 99 at the moment), baking bread, or in the woods far away with my camera.</p>
+              <p>Sometimes personal websites get out of date so feel free to take a hike over to my Github. <a href="https://github.com/zapponejosh/" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></p>
+              <p class="font-italic text-center">I know you are here to look at all my coding projects but it'd be a shame not to show you this picture of a squirrel eating a mushroom I took!</p>
+              
+              <img class="img-squirrel" src="Assets/Images/squirrel.jpg" alt="a squirrel eating a mushroom">
+              
+            </div>
+          </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="d-flex justify-content-center">
+          <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2020</p>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
