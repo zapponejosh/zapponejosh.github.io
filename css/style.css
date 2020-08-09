@@ -16,7 +16,7 @@ body {
   }
 
 #content-wrap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 8rem;
 }
 
 
@@ -84,6 +84,15 @@ hr {
     margin-bottom: 1.5rem;
 }
 
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+.section-head > *{
+}
+
 /* about page css */
 .img-about {
     max-height: 300px;
@@ -147,17 +156,35 @@ hr {
 
 /* Footer CSS */
 
+/* links */
+
+.link {
+    color: #cc6419;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.link:hover {
+    color: #f7822f;
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 8rem;
     background-color: #222222;
     border-top: 4px solid #cc6419;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p {
-    padding-top: 20px;
+    padding-top: 10px;
     color: whitesmoke;
 }
 

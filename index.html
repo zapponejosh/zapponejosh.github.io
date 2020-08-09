@@ -27,8 +27,8 @@
           <div class="navbar col-md-8 col-sm-6">
             <nav class="nav">
               <a class="nav-link active" href="index.html">About</a>
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </nav>
           </div>  
         </div>
@@ -53,12 +53,97 @@
               <img class="img-squirrel" src="Assets/Images/squirrel.jpg" alt="a squirrel eating a mushroom">
               
             </div>
+          
+            <div class="card-body">
+              <div class="section-head">
+                <h4 id="portfolio" class="card-title about-title">Portfolio</h4>
+                <a href="#" class="top">Back to top <i class="fas fa-angle-up"></i></a>
+              </div>
+              <hr>
+
+              <div class="wrapper">
+                <div class="portfolio-item">
+                  <img src="./Assets/Images/serenity-preview.png" alt="code preview image" class="preview">
+                  <h4 class="name"><i class="fas fa-star"></i> Discover Serenity</h4>
+                  <p class="description">A project using data from APIs to find hikes for the user that may be less populated during a time when social distancing is important.</p>
+                  <div class="links">
+                    <p><a href="https://calebkirkish.github.io/discover-serenity/" target="_blank" class="deployed">View the project</a></p>
+                    <p><a href="https://github.com/calebkirkish/discover-serenity" target="_blank" class="repo">View the code</a></p>
+                  </div>
+                </div>
+                
+                <div class="portfolio-item">
+                  <img src="./Assets/Images/day-planner-preview.png" alt="code preview image" class="preview">
+                  <h4 class="name">Day Planner</h4>
+                  <p class="description">A basic app practicing the use of local storage, jQuery, and using momentjs.</p>
+                  <div class="links">
+                    <p><a href="https://zapponejosh.github.io/hw-5-day-planner/" target="_blank" class="deployed">View the project</a></p>
+                    <p><a href="https://github.com/zapponejosh/hw-5-day-planner" target="_blank" class="repo">View the code</a></p>
+                  </div>
+                </div>
+
+                <div class="portfolio-item">
+                  <img src="./Assets/Images/weather-preview.png" alt="code preview image" class="preview">
+                  <h4 class="name">Weather Dashboard</h4>
+                  <p class="description">A project using the Open Weather API praciting CSS Grid, local storage, and API calls.</p>
+                  <div class="links">
+                    <p><a href="https://zapponejosh.github.io/hw-6-weather-app/" target="_blank" class="deployed">View the project</a></p>
+                    <p><a href="https://github.com/zapponejosh/hw-6-weather-app" target="_blank" class="repo">View the code</a></p>
+                  </div>
+                </div>
+                <div class="portfolio-item">
+                  <img src="./Assets/Images/quiz-preview.png" alt="code preview image" class="preview">
+                  <h4 class="name">JavaScript Quiz</h4>
+                  <p class="description">A short quiz practicing jQuery, event listeners, and local storage.</p>
+                  <div class="links">
+                    <p><a href="https://zapponejosh.github.io/hw-4-quiz/" target="_blank" class="deployed">View the project</a></p>
+                    <p><a href="https://github.com/zapponejosh/hw-4-quiz" target="_blank" class="repo">View the code</a></p>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+         
+            <div class="card-body">
+              <div class="section-head">
+                <h4 id="contact" class="card-title about-title">Contact Me</h4>
+                <a href="#" class="top">Back to top <i class="fas fa-angle-up"></i></a>
+
+              </div>
+              <hr>
+              <!-- Form -->
+                <form>
+                    <div class="form-group">
+                      <label for="ContactName">Name</label>
+                      <input type="text" class="form-control" id="contactName" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                      <small id="emailHelp" class="form-text text-muted">Your email will never be shared.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="formMessage">Message</label>
+                      <textarea class="form-control" id="formMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                  </form>
+            </div>
           </section>
+
       </main>
 
       <!-- Footer -->
       <footer class="d-flex justify-content-center">
-          <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2020</p>
+        <!-- Links -->
+        <div class="links">
+          <a href="https://www.linkedin.com/in/josh-zappone-60bb85196/" target="_blank"><i class="link fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/zapponejosh/" target="_blank"><i class=" link fa fa-github fa-2x" aria-hidden="true"></i></a>
+          <a href="https://docs.google.com/document/d/e/2PACX-1vS7k99mjkPsDGR3EnBUpRUPekKjI9res29Ox4KKAWzHAOqKooiAkQR2FPWzbjn9H4Na6qBCW1joYtmv/pub" target="_blank" class="link">RESUME</a>
+        </div>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2020</p>
       </footer>
     </div>
     <!-- Optional JavaScript -->
